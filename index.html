@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html lang="ja"> 
+  <head> 
+    <meta charset="utf-8">
+    <title>UKIYOcreate</title> 
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body> 
+    <header>
+        <h1>UKIYOcreate</h1>
+        <div class="header-list">
+            <ul>
+                <li>BLOG</li>
+                <li>ABOUT</li>
+                <li>LINKS</li>
+                <li>PROJECTS</li>
+            </ul>
+        </div>
+    </header>
+    <div class="yellow-block">
+        <div class="black-block">
+            <div class="white-summarize-block">
+                <div class="white-top1-block">
+                   <div class="white-small-block"></div>
+                    <div class="white-top2-block">
+                        <div class="white-small-block"></div>
+                        <div class="white-top2-block">
+                            <div class="white-small-block"></div>
+                            <div class="white-top2-block">
+                                <div class="white-small-block"></div>
+                                <div class="white-top2-block">
+                                    <div class="white-small-block"></div>
+                                    <div class="white-top2-block">
+                                        <div class="white-small-block"></div>
+                                        <div class="white-top2-block">
+                                            <div class="white-small-block"></div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="black-diagonal-block">
+        </div>
+        <span class="black-thin-beside-block">
+        </span>
+        <span class="black-thin-vertical-block">
+        </span>
+        <div class="bottom-block">
+            <span class="white-bottom-right-block">
+                <div class="white-small-block">
+                </div>
+                <span class="black-bottom-right-block">
+                </span>
+            </span>
+        </div>
+    </div>
+    <h1 class="big-about">A few words about this blog<br> 
+        platoform, Ghost, and how this<br> site was made
+    </h1>
+    <h6 class="small-about">Why Ghost(& Figma) instead of Medium, WordPress or<br>
+         other options?
+    </h6>
+    <h2 class="articles">All articles</h2>
+    <div class="all-post">
+        <div class="title">
+            <img src="#" alt="" id="image1" class="photo" >
+            <h3>Hello world, or, in<br> other words, why this blog exists </h3>
+        </div>
+        <div class="title">
+            <img src="#" alt="" id="image2" class="photo" >
+            <h3>Here are some things<br> you should know regarding how we work </h3>
+        </div>
+        <div class="title">
+            <img src="#" alt="" id="image3" class="photo" >
+            <h3>Connecting artificial intelligence with digital product design </h3>
+        </div>
+        <div class="title">
+            <img src="#" alt="" id="image4" class="photo" >
+            <h3>It's all about finding the perfect balance</h3>
+        </div>
+        <div class="title">
+            <img src="#" alt="" id="image5" class="photo" >
+            <h3>I believe learning is the most important skill</h3>
+        </div>
+        <div class="title">
+            <img src="#" alt="" id="image6" class="photo" >
+            <h3>Clients are part of the team </h3>
+        </div>
+        <div class="title">
+            <img src="#" alt="" id="image7" class="photo" >
+            <h3>Clients are part of the team </h3>
+        </div>
+        <div class="title">
+            <img src="#" alt="" id="image8" class="photo" >
+            <h3>Here are some things<br> you should know regarding how we work  </h3>
+        </div>
+        <div class="title">
+            <img src="#" alt="" id="image9" class="photo" >
+            <h3>Connecting artificial intelligence with digital product design  </h3>
+        </div>
+        <div class="title">
+            <img src="#" alt="" id="image10" class="photo" >
+            <h3>How modern remote working tools gets along with Old School<br> Cowboy's methods </h3>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h2>UKIYOcreate</h2>
+            <h6 class="first-sentence">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+            Duis eu velit tempus erat egestas efficitur. In hac habitasse<br>
+            platea dictumst. Fusce a nunc eget ligula suscipit finibus.<br></h6>
+            <span>Twitter</span>  <span>LinkedIn</span>  <span>RSS</span> 
+            <h6 class="second-sentence">
+                © 2012-2020 Nordic Rose Co. <br>
+                All rights reserved. 
+            </h6>
+        </div>
+    </footer>
+  </body>
+</html>
+<script>
+    let img1 = document.getElementById("image1");
+    let img2 = document.getElementById("image2");
+    let img3 = document.getElementById("image3");
+    let img4 = document.getElementById("image4");
+    let img5 = document.getElementById("image5");
+    let img6 = document.getElementById("image6");
+    let img7 = document.getElementById("image7");
+    let img8 = document.getElementById("image8");
+    let img9 = document.getElementById("image9");
+    let img10 = document.getElementById("image10");
+    const getData = function () {
+        fetch("https://ukiyo-test-blog.microcms.io/api/v1/articles", {
+        headers: {
+        "X-MICROCMS-API-KEY": "1CdoKFONr4t66inzJ9GNc8kFcCmpjeRfJmdo"
+        }
+        })
+        .then((res) => res.json())
+        .then((apiData) => console.log(img1.src ="https://images.microcms-assets.io/assets/1848d4d9f6b3490983a2825784cd40c6/d6add5de5e414ab582e28e8ba27e6b31/Rectangle%2013.jpg" ))
+        .then((apiData) => console.log(img2.src ="https://images.microcms-assets.io/assets/1848d4d9f6b3490983a2825784cd40c6/978b24fabd37462fbb9fd1583fed2b48/Rectangle%2012.jpg" ))
+        .then((apiData) => console.log(img3.src ="https://images.microcms-assets.io/assets/1848d4d9f6b3490983a2825784cd40c6/0803a98a416e466a8830973146f11964/Rectangle%2014.jpg" ))
+        .then((apiData) => console.log(img4.src ="https://images.microcms-assets.io/assets/1848d4d9f6b3490983a2825784cd40c6/fe60010c80e249eeb70498b4aca365e8/Rectangle%2015.jpg" ))
+        .then((apiData) => console.log(img5.src ="https://images.microcms-assets.io/assets/1848d4d9f6b3490983a2825784cd40c6/938183475b43471eb5377f1b89579862/Rectangle%2012-2.jpg" ))
+        .then((apiData) => console.log(img6.src ="https://images.microcms-assets.io/assets/1848d4d9f6b3490983a2825784cd40c6/11a90544c8834d5c8bdeef8fd701fa57/Rectangle%2013-2.jpg" ))
+        .then((apiData) => console.log(img7.src ="https://images.microcms-assets.io/assets/1848d4d9f6b3490983a2825784cd40c6/98c4f8c56f18402dbd2628137d5b7859/Rectangle%2019.jpg" ))
+        .then((apiData) => console.log(img8.src ="https://images.microcms-assets.io/assets/1848d4d9f6b3490983a2825784cd40c6/2523781806a1483c93a03ad1734244d0/Rectangle%2017.jpg" ))
+        .then((apiData) => console.log(img9.src ="https://images.microcms-assets.io/assets/1848d4d9f6b3490983a2825784cd40c6/70b5527fb7024e49abc45db9cb24d861/Rectangle%2016.jpg" ))
+        .then((apiData) => console.log(img10.src ="https://images.microcms-assets.io/assets/1848d4d9f6b3490983a2825784cd40c6/9f24ce31bd024aeba3af3e998d34565e/Rectangle%2018.jpg" ));
+        };
+    getData();
+</script>
