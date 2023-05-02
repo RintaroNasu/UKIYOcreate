@@ -2,7 +2,6 @@ body{
     margin: 0;
    
 }
-
 header{
     border-bottom-style:solid;
     border-color: rgb(213, 203, 189);
@@ -132,8 +131,8 @@ header h1{
 }
 .big-about{
     margin-top: 7vh;
-    margin-left: 22vw;
     font-size:55px;
+    text-align: center;
 }
 .small-about{
     width: 60vw;
